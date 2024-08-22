@@ -1,4 +1,4 @@
-/* App.module.css */
+
 * {
     padding: 0;
     margin: 0;
@@ -27,12 +27,13 @@
   }
   
   .mlsclogo {
-    height: 35px;
+    height: 60px;
   }
   
   .text {
+    font-family: "League Spartan", sans-serif;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
   }
   
@@ -87,6 +88,7 @@
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #007BFF;
+    font-family: "League Spartan", sans-serif;
     color: white;
     border-radius: 5px;
     cursor: pointer;
