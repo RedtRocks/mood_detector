@@ -1,0 +1,95 @@
+/* App.module.css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: #2E2E2E;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004961;
+    width: 100%;
+    height: 10vh;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .mlsclogo {
+    height: 35px;
+  }
+  
+  .text {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .maincont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2E2E2E;
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .lines {
+    position: absolute;
+    width: 200%;
+    height: 20px;
+    background-color: #606060;
+    z-index: 0;
+  }
+  
+  .lines:nth-child(1) { transform: rotate(-25.75deg); top: 20% ; }
+  .lines:nth-child(2) { transform: rotate(-25.75deg); top: 50%; }
+  .lines:nth-child(3) { transform: rotate(-25.75deg); top: 80%; }
+  
+  .livecamera {
+    margin-top:  6%;
+    width: 60%;
+    height: 60%;
+    background-color: #D3D3D3;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .livecamera video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .buttonContainer{
+    z-index: 1;
+    padding: 5% 0;
+  }
+  
+  .button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1;
+  }
