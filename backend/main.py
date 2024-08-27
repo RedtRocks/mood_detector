@@ -30,7 +30,7 @@ def extract_features(image):
     feature = feature.reshape(1, 48, 48, 1)  
     return feature / 255.0
 
-labels = {0: 'chal na chutiye gussa kise dikhara hai', 1: 'mummy kyu bnre ho', 2: 'phat gyi ?', 3: 'dekh dekh khush hoye jra hai', 4: 'chachaa thoda emotion please', 5: 'itna depression me kyu hoo', 6: 'ohooo aisaa kya dekh liya'}
+labels = {0: 'chal na gussa kise dikhara hai', 1: 'mummy kyu bnre ho', 2: 'phat gyi ?', 3: 'dekh dekh khush hoye jra hai', 4: 'chachaa thoda emotion please', 5: 'itna depression me kyu hoo', 6: 'ohooo aisaa kya dekh liya'}
 
 @app.route('/predict', methods=['POST', 'OPTIONS'])
 def predict_emotion():

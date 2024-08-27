@@ -22,8 +22,7 @@ function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       captureAndPredict();
-    }, 1000); // Predict every second
-
+    }, 1000);
     return () => clearInterval(interval);
   }, []);
 
@@ -91,6 +90,11 @@ function App() {
           </div>
         </div>
       </div>
+      <footer className={styles.footer}>
+        <p className={styles.footerText}>
+          Check out the code on <a href="https://github.com/SanyamWadhwa07/mood_detector" className={styles.footerLink}>GitHub</a>
+        </p>
+      </footer>
     </div>
   );
 }
